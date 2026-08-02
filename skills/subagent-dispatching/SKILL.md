@@ -85,7 +85,7 @@ agent("任务3", isolation="worktree")
 1. **liyu-iteration-budget.py** — 子 Agent 迭代预算控制
 2. **liyu-circuit-breaker.py** — 子 Agent 熔断器
 3. **liyu-security-layer.py** — 子 Agent 安全检查
-4. **phoenix-memory-v2.py** — 子 Agent 记忆隔离
+4. **liyu-memory-v2.py** — 子 Agent 记忆隔离
 
 ## Domains
 

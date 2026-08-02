@@ -95,7 +95,7 @@ class MemoryAPI:
     def search(self, query: str, limit: int = 10) -> List[Dict]:
         """搜索记忆"""
         result = subprocess.run(
-            [PYTHON, str(鲤鱼_HOME / "phoenix-memory-v2.py"), "search", query],
+            [PYTHON, str(鲤鱼_HOME / "liyu-memory-v2.py"), "search", query],
             capture_output=True,
             text=True
         )
@@ -104,7 +104,7 @@ class MemoryAPI:
     def capture(self) -> bool:
         """捕获当前会话记忆"""
         result = subprocess.run(
-            [PYTHON, str(鲤鱼_HOME / "phoenix-memory-v2.py"), "capture"],
+            [PYTHON, str(鲤鱼_HOME / "liyu-memory-v2.py"), "capture"],
             capture_output=True,
             text=True
         )
@@ -113,7 +113,7 @@ class MemoryAPI:
     def prime(self) -> str:
         """生成注入内容"""
         result = subprocess.run(
-            [PYTHON, str(鲤鱼_HOME / "phoenix-memory-v2.py"), "prime"],
+            [PYTHON, str(鲤鱼_HOME / "liyu-memory-v2.py"), "prime"],
             capture_output=True,
             text=True
         )
@@ -315,7 +315,7 @@ class LiYuAPI:
         stats = {}
         for name, script in [
             ("security", "liyu-security-layer.py"),
-            ("memory", "phoenix-memory-v2.py"),
+            ("memory", "liyu-memory-v2.py"),
             ("budget", "liyu-iteration-budget.py"),
             ("drift", "liyu-identity-drift.py"),
             ("correction", "liyu-correction-lifecycle.py"),

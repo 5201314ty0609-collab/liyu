@@ -33,13 +33,13 @@ PYTHON = "python3"
 # ── 模块映射 ──────────────────────────────────────────────────────────────
 MODULES = {
     "security": "liyu-security-layer.py",
-    "memory": "phoenix-memory-v2.py",
+    "memory": "liyu-memory-v2.py",
     "budget": "liyu-iteration-budget.py",
     "drift": "liyu-identity-drift.py",
     "correction": "liyu-correction-lifecycle.py",
     "framework": "liyu-framework-promoter.py",
     "circuit": "liyu-circuit-breaker.py",
-    "bash-guard": "phoenix-bash-guard.py",
+    "bash-guard": "liyu-bash-guard.py",
     "compress": "liyu-context-compressor.py",
     "reflect": "reflection-engine.py",
 }

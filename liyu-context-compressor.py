@@ -422,7 +422,7 @@ def main():
         # 从记忆系统加载记忆
         try:
             sys.path.insert(0, str(鲤鱼_HOME))
-            from phoenix_memory_v2 import UnifiedMemoryManager
+            from liyu_memory_v2 import UnifiedMemoryManager
             manager = UnifiedMemoryManager()
             memories = manager.search("", limit=50)
         except Exception:
@@ -452,7 +452,7 @@ def main():
             # 从记忆系统检索
             try:
                 sys.path.insert(0, str(鲤鱼_HOME))
-                from phoenix_memory_v2 import UnifiedMemoryManager
+                from liyu_memory_v2 import UnifiedMemoryManager
                 manager = UnifiedMemoryManager()
                 results = manager.search(memory_id, limit=1)
                 if results:
