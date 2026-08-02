@@ -1,0 +1,12 @@
+{
+  "attachmentFolderPath": "06-Attachments",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00-Inbox",
+  "useMarkdownLinks": false,
+  "showFrontmatter": true,
+  "defaultViewMode": "preview",
+  "livePreview": true,
+  "strictLineBreaks": false,
+  "readableLineLength": true
+}
