@@ -1,6 +1,6 @@
 ---
 tags: [area, ai, agent]
-last_updated: 2026-07-10
+last_updated: 2026-08-02
 ---
 
 # 🧠 AI Agent 知识
@@ -39,58 +39,57 @@ THINK → ACT → OBSERVE → REPEAT
 
 ### ECC (Everything Claude Code)
 
-- 228k stars
-- Orchestrator patterns
-- Hook reliability
-- AgentShield 安全
-
-### MUNDO Agent
-
-- 5层安全防御
-- 熔断器模式
-- 反思循环引擎
-
-### Claude Soul
-
-- Identity drift detection
-- Correction lifecycle
-- 3-tier reflection
-
-### Metacog
-
-- 7 senses 系统
-- Nociception 检测
-- 反向强化学习
+- 237k stars
+- Agent Harness 优化
+- Skills/instincts/memory 架构
 
 ### Superpowers
 
+- 251k stars
 - 技能框架标准
 - TDD 强制执行
-- 子 Agent 调度
 
 ### DeerFlow
 
+- 76.7k stars
 - Session Goals
 - 子 Agent 隔离
-- 中间件链
 
 ### TradingAgents
 
+- 92.1k stars
 - 辩论决策机制
 - 多 Agent 专业化分工
-- 检查点恢复
 
 ### CowAgent
 
+- 45.9k stars
 - 三层记忆蒸馏
 - Deep Dream 夜间处理
-- 知识库 Wiki 化
 
 ### FastMCP
 
+- 26.1k stars
 - 装饰器注册模式
 - Schema 自动生成
-- 中间件管道
+
+### Graphify
+
+- 100k stars
+- 代码库知识图谱
+- AST 解析 + 边解释
+
+### claude-mem
+
+- 89k stars
+- 跨会话持久化记忆
+- AI 压缩后注入上下文
+
+### token-savior
+
+- 1.1k stars
+- Token 优化 -80%
+- 结构化代码导航
 
 ## 学习资源
 
