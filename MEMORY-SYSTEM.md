@@ -368,7 +368,7 @@ class MemoryCompressor:
 ### 集成方案
 
 ```python
-class PhoenixMemorySystem:
+class liyuMemorySystem:
     """鲤鱼 记忆系统"""
     
     def __init__(self, config: dict):
