@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>PHOENIX · Live Monitor</title>
+<title>liyu · Live Monitor</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <link rel="stylesheet" href="color-system.css">
 <link rel="stylesheet" href="typography-system.css">
@@ -631,7 +631,7 @@ footer {
 
 <div class="header">
   <h1>
-    PHOENIX 实时监控
+    liyu 实时监控
     <span class="version">v1.3.0</span>
   </h1>
   <div style="display:flex;align-items:center;gap:var(--space-4)">
@@ -813,7 +813,7 @@ footer {
 </div>
 
 <footer>
-  PHOENIX v1.3.0 · CTM Engine · <span id="footer-mode">GitHub Pages</span> · 自动刷新 / Auto-refresh: <span id="footer-refresh">30s</span>
+  liyu v1.3.0 · CTM Engine · <span id="footer-mode">GitHub Pages</span> · 自动刷新 / Auto-refresh: <span id="footer-refresh">30s</span>
 </footer>
 
 <div id="toast" style="display:none"></div>
@@ -824,11 +824,11 @@ footer {
 // ═══════════════════════════════════════════════
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
-let currentTheme = localStorage.getItem('phoenix-theme') || 'dark';
+let currentTheme = localStorage.getItem('liyu-theme') || 'dark';
 
 function setTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('phoenix-theme', theme);
+  localStorage.setItem('liyu-theme', theme);
   themeIcon.textContent = theme === 'dark' ? '🌙' : '☀️';
   currentTheme = theme;
 
@@ -888,9 +888,9 @@ const FALLBACK = {
     { id: 'metacog', name: '元认知/Metacog', icon: '🧠', val: 18, status: 'healthy', color: 'green' }
   ],
   moduleList: [
-    'context_mapper', 'inspector', 'knowledge-base', 'phoenix-bash-guard',
-    'phoenix-cost-tracker', 'phoenix-mutation-gate', 'phoenix-observability',
-    'phoenix-auto-memory', 'phoenix-rule-health', 'server', 'tool-guard',
+    'context_mapper', 'inspector', 'knowledge-base', 'liyu-bash-guard',
+    'liyu-cost-tracker', 'liyu-mutation-gate', 'liyu-observability',
+    'liyu-auto-memory', 'liyu-rule-health', 'server', 'tool-guard',
     'reflection-engine', 'timeline', 'policy-engine'
   ],
   timeline: [
@@ -1392,7 +1392,7 @@ async function init() {
   buildCTM();
   buildAllCharts();
 
-  if (serverConnected) toast('已连接 PHOENIX 服务器 / Connected', 'ok');
+  if (serverConnected) toast('已连接 liyu 服务器 / Connected', 'ok');
   refreshTimer = setInterval(refresh, serverConnected ? 10000 : 30000);
 }
 
