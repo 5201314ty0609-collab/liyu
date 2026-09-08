@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>PHOENIX Skill Network</title>
+<title>liyu Skill Network</title>
 <style>
 :root {
   --bg: #07070d;
@@ -335,7 +335,7 @@ const CATEGORIES = {
 
 const nodesData = [
   // 核心系统
-  {id:'phoenix',name:'PHOENIX Core',type:'system',category:'core',icon:'🔥',strength:1.0,description:'PHOENIX 自进化代理核心系统'},
+  {id:'liyu',name:'liyu Core',type:'system',category:'core',icon:'🔥',strength:1.0,description:'liyu 自进化代理核心系统'},
   {id:'evolve',name:'Evolution Engine',type:'engine',category:'engine',icon:'🧬',strength:0.95,description:'框架发现、晋升、自我修正引擎'},
   {id:'knowledge',name:'Knowledge Base',type:'engine',category:'engine',icon:'🧠',strength:0.9,description:'SQLite+FTS5 混合检索知识库'},
   {id:'metacog',name:'Metacognition',type:'engine',category:'engine',icon:'👁',strength:0.85,description:'7-Sense 元认知监控系统'},
@@ -412,23 +412,23 @@ const nodesData = [
 
 const edgesData = [
   // 核心连接
-  {source:'phoenix',target:'evolve',label:'进化',strength:0.95},
-  {source:'phoenix',target:'knowledge',label:'存储',strength:0.9},
-  {source:'phoenix',target:'metacog',label:'监控',strength:0.88},
-  {source:'phoenix',target:'hooks',label:'触发',strength:0.85},
-  {source:'phoenix',target:'reflect',label:'反思',strength:0.82},
-  {source:'phoenix',target:'observ',label:'追踪',strength:0.8},
+  {source:'liyu',target:'evolve',label:'进化',strength:0.95},
+  {source:'liyu',target:'knowledge',label:'存储',strength:0.9},
+  {source:'liyu',target:'metacog',label:'监控',strength:0.88},
+  {source:'liyu',target:'hooks',label:'触发',strength:0.85},
+  {source:'liyu',target:'reflect',label:'反思',strength:0.82},
+  {source:'liyu',target:'observ',label:'追踪',strength:0.8},
   {source:'evolve',target:'knowledge',label:'学习',strength:0.85},
   {source:'evolve',target:'reflect',label:'分析',strength:0.8},
   {source:'knowledge',target:'automem',label:'记忆',strength:0.75},
   {source:'metacog',target:'observ',label:'报告',strength:0.82},
 
   // 核心到 Agent
-  {source:'phoenix',target:'planner',label:'规划',strength:0.88},
-  {source:'phoenix',target:'architect',label:'设计',strength:0.82},
-  {source:'phoenix',target:'reviewer',label:'审查',strength:0.9},
-  {source:'phoenix',target:'bash',label:'守护',strength:0.78},
-  {source:'phoenix',target:'plan',label:'计划',strength:0.85},
+  {source:'liyu',target:'planner',label:'规划',strength:0.88},
+  {source:'liyu',target:'architect',label:'设计',strength:0.82},
+  {source:'liyu',target:'reviewer',label:'审查',strength:0.9},
+  {source:'liyu',target:'bash',label:'守护',strength:0.78},
+  {source:'liyu',target:'plan',label:'计划',strength:0.85},
 
   // Agent 协作
   {source:'planner',target:'reviewer',label:'委派',strength:0.85},
@@ -440,10 +440,10 @@ const edgesData = [
   {source:'security-r',target:'bash',label:'防护',strength:0.75},
 
   // 框架到核心
-  {source:'ecc',target:'phoenix',label:'治理',strength:0.92},
-  {source:'mundo',target:'phoenix',label:'增强',strength:0.88},
+  {source:'ecc',target:'liyu',label:'治理',strength:0.92},
+  {source:'mundo',target:'liyu',label:'增强',strength:0.88},
   {source:'gnap',target:'plan',label:'协调',strength:0.65},
-  {source:'taste',target:'phoenix',label:'设计',strength:0.72},
+  {source:'taste',target:'liyu',label:'设计',strength:0.72},
   {source:'dspy',target:'evolve',label:'优化',strength:0.68},
 
   // 语言连接
@@ -488,7 +488,7 @@ const edgesData = [
   {source:'drift',target:'plan',label:'锚定',strength:0.6},
 
   // CTM 引擎连接
-  {source:'ctm',target:'phoenix',label:'驱动',strength:0.92},
+  {source:'ctm',target:'liyu',label:'驱动',strength:0.92},
   {source:'ctm',target:'thought-stream',label:'思维',strength:0.9},
   {source:'ctm',target:'adaptive-compute',label:'计算',strength:0.88},
   {source:'ctm',target:'sync-osc',label:'同步',strength:0.85},
