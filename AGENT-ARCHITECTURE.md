@@ -354,7 +354,7 @@ class ToolRegistry:
 ### Agent 核心
 
 ```python
-class PhoenixAgent:
+class liyuAgent:
     """鲤鱼 Agent 核心"""
     
     def __init__(self, config: dict):
